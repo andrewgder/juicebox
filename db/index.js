@@ -110,12 +110,12 @@ async function getUserByUsername(username) {
       [username]
     );
 
-    if (!user) {
-      throw {
-        name: "UserNotFoundError",
-        message: "A user with that username does not exist",
-      };
-    }
+    // if (!user) {
+    //   throw {
+    //     name: "UserNotFoundError",
+    //     message: "A user with that username does not exist",
+    //   };
+    // }
 
     return user;
   } catch (error) {
