@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "seed:dev": "nodemon ./db/seed.js",
-    "start": "node index.js && node ./db/index.js && node ./db/seed.js",
-    "start:dev": "nodemon index.js"
+    "seed": "node ./db/seed.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "build": "npm install --prefix client && npm run build --prefix client "
   },
   "keywords": [],
   "author": "",
