@@ -18,3 +18,9 @@ server.listen(PORT, () => {
 
 const apiRouter = require("./api");
 server.use("/api", apiRouter);
+server.get("/", async (req, res) => {
+  res.send({
+    message:
+      "Navigate to https://andrew-juicebox.onrender.com/api/posts , update the /api route to access different info",
+  });
+});
